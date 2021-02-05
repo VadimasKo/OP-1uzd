@@ -1,5 +1,20 @@
 # OP-1uzd
-Objektynio programavimo Testavimo, 1-oji užduotis 
+Objektynio programavimo Testavimo, 1-oji užduotis  
+
+
+
+Užduoties formuluotė 
+    Pirmoje eilutėje prasideda rėmelis, kuris yra simbolių * seka.
+    Rėmelio ilgis priklauso nuo:įvesto vartotojo vardo ilgio; pasisveikinimo "Sveikas, ";tarpo ir * simbolio rėmelio pradžioje ir pabaigoje.
+    
+    Antroji eilutė prasideda ir baigiasi * simboliu, o vidus užpildytasreikiamu skaičiumi tarpo simbolių.
+    Trečioji eilutė susideda iš *, tarpo, pasisveikinimo, tarpo ir *.
+    Kervirta ir penkta eilutės bus analogiškos antrąjai ir pirmąjąi.
+                    ******************
+                    *                *
+                    * Sveikas, name! *
+                    *                *
+                    ******************
 
 Reikalavimai v0.1
     Realizuokite programą, pagal Užduoties formuluotė aprašymąir taip, kad kiekviena iš 5-ų "rėmelio" eilučių būtų saugomaatskirame kintamajame.
