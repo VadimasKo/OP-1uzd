@@ -1,26 +1,22 @@
 #include <iostream>
 #include <string>
 
-using namespace std;
-
-
-
 
 int main()
 {
-    string message = "Sveiki, ";      
-    string name;
+    std::string message = "Sveiki, ";      
+    std::string name;
     
-    cout<<"Iveskite savo varda "<<endl;
-    cin>>name;
-    cout<<endl<<endl;
+    std::cout<<"Iveskite savo varda "<<std::endl;
+    std::cin>>name;
+    std::cout<<std::endl<<std::endl;
    
     message += name;
 
     int length = message.length();
    
-    string line(length +4,'*');
-    string space(length,' ');
+    std::string line(length +4,'*');
+    std::string space(length,' ');
 
     //add walls  
     space.insert(0,"* ");
@@ -29,9 +25,9 @@ int main()
     message.append(" *");
 
 
-    cout<<line<<endl;
-    cout<<space<<endl;
-    cout<<message<<endl;
-    cout<<space<<endl;
-    cout<<line<<endl;
+    std::cout<<line<<std::endl;
+    std::cout<<space<<std::endl;
+    std::cout<<message<<std::endl;
+    std::cout<<space<<std::endl;
+    std::cout<<line<<std::endl;
 }
