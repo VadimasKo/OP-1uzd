@@ -1,30 +1,30 @@
 #include <iostream>
 #include <string>
 
-std::string getGender( std::string name){    //nustato vardo lyti ir pakeicia zinute
+void getGender( std::string name, std::string * message){    //nustato vardo lyti ir pakeicia zinute
     char last = name.back();
-    std::string message;
     if(last == 'a' || last=='A'){
-        message = "Sveika, ";
-        message += name;
+        *message = "Sveika, ";
+        *message += name;
     }
     else{
-        message = "Sveikas, ";
-        message += name;
+        *message = "Sveikas, ";
+        *message += name;
     }
 
-    return message;
 }
 
 int main(){
         
     std::string name;
+    std::string message;v
     
     std::cout<<"Iveskite savo varda "<<std::endl;
     std::cin>>name;
     std::cout<<std::endl<<std::endl;
    
-    std::string message = getGender(name);
+
+    getGender(name, &message);
 
 
     int length = message.length();
