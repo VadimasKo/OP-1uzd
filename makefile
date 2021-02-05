@@ -6,4 +6,6 @@ clean:
 
 compile-run:
 	g++ 'main.cpp' -o 'main'  && './main'
-	
+
+run:
+	./main
