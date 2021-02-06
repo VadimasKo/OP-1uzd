@@ -1,39 +1,79 @@
-# OP-1uzd
-Objektynio programavimo Testavimo, 1-oji užduotis  
+# Įrėmintas pasisveikinimas
+
+```shell
+********************
+*                  *
+* Sveikas, Pasauli *
+*                  *
+********************
+```
+
+Programa skirta pasisveikinimo, apvilkto į rėmelį, išvedimui į konsolę.
+
+## Veikimo principas
+
+Paleidus programą, komandinėje eilutėje vartotojo yra prašoma suvesti:
+
+* Vardą: *Iveskite savo varda*
+ 
+ (sutikus pakeisti ilgi " Ar norite pakeisti remelio dydi (y/n) y"
+* Nauja ilgi: *iveskite nauja ilgi (jeigu nenoryte iveskite '0')*
 
 
+Suvedus šiuos duomenis programa konsolėje atspausdina pasisveikinimą, įvilktą į rėmelį, sudarytą iš žvagždučių `*`:
 
-Užduoties formuluotė 
-    Pirmoje eilutėje prasideda rėmelis, kuris yra simbolių * seka.
-    Rėmelio ilgis priklauso nuo:įvesto vartotojo vardo ilgio; pasisveikinimo "Sveikas, ";tarpo ir * simbolio rėmelio pradžioje ir pabaigoje.
-    
-    Antroji eilutė prasideda ir baigiasi * simboliu, o vidus užpildytasreikiamu skaičiumi tarpo simbolių.
-    Trečioji eilutė susideda iš *, tarpo, pasisveikinimo, tarpo ir *.
-    Kervirta ir penkta eilutės bus analogiškos antrąjai ir pirmąjąi.
-                    ******************
-                    *                *
-                    * Sveikas, name! *
-                    *                *
-                    ******************
+```shell
+Iveskite savo varda VadimasXD
+**********************
+*                    *
+* Sveikas, VadimasXD *
+*                    *
+**********************
+```
 
-Reikalavimai v0.1
-    Realizuokite programą, pagal Užduoties formuluotė aprašymąir taip, kad kiekviena iš 5-ų "rėmelio" eilučių būtų saugomaatskirame kintamajame.
-    
-    Realizuotą programą turite patalpinti github (ar alternatyvioje,pvz. gitlab, bitbucket) repozicijoje, kurioje būtų tik Jūsų kurti(source) failai, t.y. jokių naudojamo IDE "šiukšlių".
-    
-    Kiekvienai iš versijų, sukurkite atskirą releas'ą
+Jei vartotojas įveda moterišką vardą, pvz *Jurga*, tai pasisveikinimas *Sveikas* yra automatiškai pakeičiamas žodžiu *Sveika*:
 
-Reikalavimai v0.2
-    Modifikuokite versiją (v0.1) taip, kad jeigu vartotojas yramoteris, tuomet vietoj "Sveikas, " rašytų "Sveika, "
+```shell
+Iveskite savo varda Jurga!
 
-Reikalavimai v0.2
-    Modifikuokite versiją (v0.2) taip, kad nereiktų kiekvienoseilutės saugoti atskirame kintamajame.
+************************
+*                      *
+*    Sveika, Jurga!    *
+*                      *
+************************
+```
 
-    Realizuokite galimybę vartotojui nurodyti rėmelio plotį (eilučiųskaičių), taip, kad pasisveikinimas išliktų rėmelio viduje
+Jei vartotojas įveda per mažą ploti:
 
-    Galutinėje versijoje repozicijos README faile turi būti aprašyta
-        ką programa atlieka
+```shell
+Ar norite pakeisti remelio dydi (y/n)
+y
+iveskite nauja ilgi (jeigu nenoryte iveskite '0') 
+2
+ilgis per mazas arba ivestis netinkama 
+iveskite nauja ilgi (jeigu nenoryte iveskite '0')
+_
+```
 
-        visi programos releasai
+Norint isvalyti istrinti executable
+```shell
+    make clean arba rm main :)
+```
 
-        įdiegimo instrukcija ir kaip programa naudotis
+
+## Programos diegimas ir paleidimas
+
+* Atsisiųskite programos versiją iš [Releases](https://github.com/rendertom/VU-Objektinis-Programavimas/releases) aplanko ir ją išsiarchyvuokite,
+* Komandinėje eilutėje įvykdykite sekančius veiksmus:
+
+```shell
+cd nuoroda_į_programos_aplanką
+make compile-run arba g++ 'main.cpp' -o 'main'  && './main'
+make run arba ./main
+```
+
+### Changelog
+
+* [v1.0](https://github.com/VadimasKo/OP-1uzd/releases/tag/v1.0) Leidžia vartotojui įvesti rėmelio dydį.
+* [v0.2](https://github.com/VadimasKo/OP-1uzd/releases/tag/v0.2) Pakeičia žodį *Sveikas* į *Sveika*, atsižvelgiant į vartotojo lytį.
+* [v0.1](https://github.com/VadimasKo/OP-1uzd/releases/tag/v0.1) Atspausdina pasisveikinimą su rėmeliu.
