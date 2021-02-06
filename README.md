@@ -74,6 +74,6 @@ make run arba ./main
 
 ### Changelog
 
-* [v1.0](https://github.com/rendertom/VU-OP-Task-1-Paveikslelis/releases/tag/v1.0) Leidžia vartotojui įvesti rėmelio dydį.
-* [v0.2](https://github.com/rendertom/VU-OP-Task-1-Paveikslelis/releases/tag/v0.2) Pakeičia žodį *Sveikas* į *Sveika*, atsižvelgiant į vartotojo lytį.
-* [v0.1](https://github.com/rendertom/VU-OP-Task-1-Paveikslelis/releases/tag/v0.1) Atspausdina pasisveikinimą su rėmeliu.
+* [v1.0](https://github.com/VadimasKo/OP-1uzd/releases/tag/v1.0) Leidžia vartotojui įvesti rėmelio dydį.
+* [v0.2](https://github.com/VadimasKo/OP-1uzd/releases/tag/v0.2) Pakeičia žodį *Sveikas* į *Sveika*, atsižvelgiant į vartotojo lytį.
+* [v0.1](https://github.com/VadimasKo/OP-1uzd/releases/tag/v0.1) Atspausdina pasisveikinimą su rėmeliu.
