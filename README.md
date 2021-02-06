@@ -1,11 +1,11 @@
 # Įrėmintas pasisveikinimas
 
 ```shell
-*********************
-*                   *
-* Sveikas, Pasauli! *
-*                   *
-*********************
+********************
+*                  *
+* Sveikas, Pasauli *
+*                  *
+********************
 ```
 
 Programa skirta pasisveikinimo, apvilkto į rėmelį, išvedimui į konsolę.
@@ -23,7 +23,7 @@ Paleidus programą, komandinėje eilutėje vartotojo yra prašoma suvesti:
 Suvedus šiuos duomenis programa konsolėje atspausdina pasisveikinimą, įvilktą į rėmelį, sudarytą iš žvagždučių `*`:
 
 ```shell
-Please enter your name: VadimasXD
+Iveskite savo varda VadimasXD
 **********************
 *                    *
 * Sveikas, VadimasXD *
@@ -34,7 +34,7 @@ Please enter your name: VadimasXD
 Jei vartotojas įveda moterišką vardą, pvz *Jurga*, tai pasisveikinimas *Sveikas* yra automatiškai pakeičiamas žodžiu *Sveika*:
 
 ```shell
-Please enter your name: Jurga
+Iveskite savo varda Jurga!
 
 ************************
 *                      *
