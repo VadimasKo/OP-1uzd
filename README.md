@@ -63,7 +63,7 @@ Norint isvalyti istrinti executable
 
 ## Programos diegimas ir paleidimas
 
-* Atsisiųskite programos versiją iš [Releases](https://github.com/rendertom/VU-Objektinis-Programavimas/releases) aplanko ir ją išsiarchyvuokite,
+* Atsisiųskite programos versiją iš [Releases](https://github.com/VadimasKo/OP-1uzd/releases) aplanko ir ją išsiarchyvuokite,
 * Komandinėje eilutėje įvykdykite sekančius veiksmus:
 
 ```shell
