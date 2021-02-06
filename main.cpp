@@ -14,20 +14,46 @@ void getGender( std::string name, std::string * message){    //nustato vardo lyt
 
 }
 
-int main(){
-        
-    std::string name;
-    std::string message;v
+std::string setWidth( std::string message, int length){ //nenaudoju pointerio nes kylo problemu su metodo naudojimu (tikriausiai kadangi string yra char[])
+
+    std::string upperSpace( length%2 + length/2, ' ');
+    std::string lowerSpace (length/2, ' ');
     
+    upperSpace += message + lowerSpace;
+    
+    message = upperSpace;
+    
+
+    return message;
+    }
+
+int main(){  
+
+    std::string name;
+    std::string message;
+    int length;
+    char ats = 'y';
+
     std::cout<<"Iveskite savo varda "<<std::endl;
     std::cin>>name;
     std::cout<<std::endl<<std::endl;
-   
-
     getGender(name, &message);
 
+    std::cout<<"Ar norite pakeisti remelio dydi (y/n)"<<std::endl;
+    std::cin>>ats;
+    if (ats == 'y'){
+        std::cout<<"iveskite zinutes ploti"<<std::endl;
+        std::cin>>length;
 
-    int length = message.length();
+        message = setWidth(message, (length-message.length()));
+    }
+
+    length = message.length();
+
+   
+    // std::cout<<length;
+
+
    
     std::string line(length +4,'*');
     std::string space(length,' ');
